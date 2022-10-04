@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SpaceGuts", "SpaceGuts\SpaceGuts.vcxproj", "{B4A64E2C-2011-03A3-694F-B448D5F8E0F7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dependencies", "Dependencies", "{53E47842-3FC8-3998-A828-34EB942B241A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Box2D", "SpaceGuts\dependencies\Box2D\Box2D.vcxproj", "{A434E80C-1049-10BE-D9CA-B31D459E0CEF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ImGui", "SpaceGuts\dependencies\imgui\ImGui.vcxproj", "{C0FF640D-2C14-8DBE-F595-301E616989EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B4A64E2C-2011-03A3-694F-B448D5F8E0F7}.Debug|x64.ActiveCfg = Debug|x64
+		{B4A64E2C-2011-03A3-694F-B448D5F8E0F7}.Debug|x64.Build.0 = Debug|x64
+		{B4A64E2C-2011-03A3-694F-B448D5F8E0F7}.Release|x64.ActiveCfg = Release|x64
+		{B4A64E2C-2011-03A3-694F-B448D5F8E0F7}.Release|x64.Build.0 = Release|x64
+		{A434E80C-1049-10BE-D9CA-B31D459E0CEF}.Debug|x64.ActiveCfg = Debug|x64
+		{A434E80C-1049-10BE-D9CA-B31D459E0CEF}.Debug|x64.Build.0 = Debug|x64
+		{A434E80C-1049-10BE-D9CA-B31D459E0CEF}.Release|x64.ActiveCfg = Release|x64
+		{A434E80C-1049-10BE-D9CA-B31D459E0CEF}.Release|x64.Build.0 = Release|x64
+		{C0FF640D-2C14-8DBE-F595-301E616989EF}.Debug|x64.ActiveCfg = Debug|x64
+		{C0FF640D-2C14-8DBE-F595-301E616989EF}.Debug|x64.Build.0 = Debug|x64
+		{C0FF640D-2C14-8DBE-F595-301E616989EF}.Release|x64.ActiveCfg = Release|x64
+		{C0FF640D-2C14-8DBE-F595-301E616989EF}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A434E80C-1049-10BE-D9CA-B31D459E0CEF} = {53E47842-3FC8-3998-A828-34EB942B241A}
+		{C0FF640D-2C14-8DBE-F595-301E616989EF} = {53E47842-3FC8-3998-A828-34EB942B241A}
+	EndGlobalSection
+EndGlobal

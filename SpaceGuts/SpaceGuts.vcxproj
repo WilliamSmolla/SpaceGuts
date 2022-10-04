@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B4A64E2C-2011-03A3-694F-B448D5F8E0F7}</ProjectGuid>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>SpaceGuts</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\binaries\Debug-windows-x86_64\SpaceGuts\</OutDir>
+    <IntDir>..\binaries-intermediates\Debug-windows-x86_64\SpaceGuts\</IntDir>
+    <TargetName>SpaceGuts</TargetName>
+    <TargetExt>.exe</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\binaries\Release-windows-x86_64\SpaceGuts\</OutDir>
+    <IntDir>..\binaries-intermediates\Release-windows-x86_64\SpaceGuts\</IntDir>
+    <TargetName>SpaceGuts</TargetName>
+    <TargetExt>.exe</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;CORE_PLATFORM_WINDOWS;GLFW_INCLUDE_NONE;CORE_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>src;dependencies\Box2D\include;dependencies\imgui;dependencies\entt\include;dependencies\SDL_FontCache-master;dependencies\SDL2_image-2.0.5\include;dependencies\SDL2_mixer-2.0.4\include;dependencies\SDL2_ttf-2.0.18\include;dependencies\SDL2-2.0.18\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;dependencies\SDL2-2.0.18\lib\x64\SDL2.lib;dependencies\SDL2-2.0.18\lib\x64\SDL2main.lib;dependencies\SDL2_image-2.0.5\lib\x64\SDL2_image.lib;dependencies\SDL2_mixer-2.0.4\lib\x64\SDL2_mixer.lib;dependencies\SDL2_ttf-2.0.18\lib\x64\SDL2_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;CORE_PLATFORM_WINDOWS;GLFW_INCLUDE_NONE;CORE_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>src;dependencies\Box2D\include;dependencies\imgui;dependencies\entt\include;dependencies\SDL_FontCache-master;dependencies\SDL2_image-2.0.5\include;dependencies\SDL2_mixer-2.0.4\include;dependencies\SDL2_ttf-2.0.18\include;dependencies\SDL2-2.0.18\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <ExternalWarningLevel>Level3</ExternalWarningLevel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opengl32.lib;dependencies\SDL2-2.0.18\lib\x64\SDL2.lib;dependencies\SDL2-2.0.18\lib\x64\SDL2main.lib;dependencies\SDL2_image-2.0.5\lib\x64\SDL2_image.lib;dependencies\SDL2_mixer-2.0.4\lib\x64\SDL2_mixer.lib;dependencies\SDL2_ttf-2.0.18\lib\x64\SDL2_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="game\Game.h" />
+    <ClInclude Include="src\scene\SceneManager.h" />
+    <ClInclude Include="src\physics\CollisionCallback.h" />
+    <ClInclude Include="game\scripts\PlayerController.h" />
+    <ClInclude Include="src\core\Application.h" />
+    <ClInclude Include="src\core\InputManager.h" />
+    <ClInclude Include="src\core\Log.h" />
+    <ClInclude Include="src\core\ResourceManager.h" />
+    <ClInclude Include="src\core\Resources.h" />
+    <ClInclude Include="src\core\SoundManager.h" />
+    <ClInclude Include="src\core\Window.h" />
+    <ClInclude Include="src\graphics\AnimationClip.h" />
+    <ClInclude Include="src\graphics\AnimationController.h" />
+    <ClInclude Include="src\graphics\Camera.h" />
+    <ClInclude Include="src\graphics\Renderer.h" />
+    <ClInclude Include="src\graphics\Texture.h" />
+    <ClInclude Include="src\maths\MathConstants.h" />
+    <ClInclude Include="src\maths\Maths.h" />
+    <ClInclude Include="src\maths\Random.h" />
+    <ClInclude Include="src\maths\Vec2.h" />
+    <ClInclude Include="src\maths\Vec3.h" />
+    <ClInclude Include="src\maths\Vec4.h" />
+    <ClInclude Include="src\pch.h" />
+    <ClInclude Include="src\physics\PhysicMaterial.h" />
+    <ClInclude Include="src\physics\PhysicsManager.h" />
+    <ClInclude Include="src\scene\Components.h" />
+    <ClInclude Include="src\scene\GameObject.h" />
+    <ClInclude Include="src\scene\Scene.h" />
+    <ClInclude Include="src\scene\ScriptableGameObject.h" />
+    <ClInclude Include="src\utils\FileUtils.h" />
+    <ClInclude Include="src\utils\Timer.h" />
+    <ClInclude Include="game\TestScene.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="game\Game.cpp" />
+    <ClCompile Include="src\scene\SceneManager.cpp" />
+    <ClCompile Include="src\physics\CollisionCallback.cpp" />
+    <ClCompile Include="game\SpaceGuts.cpp" />
+    <ClCompile Include="game\scripts\PlayerController.cpp" />
+    <ClCompile Include="src\core\Application.cpp" />
+    <ClCompile Include="src\core\InputManager.cpp" />
+    <ClCompile Include="src\core\Log.cpp" />
+    <ClCompile Include="src\core\ResourceManager.cpp" />
+    <ClCompile Include="src\core\Resources.cpp" />
+    <ClCompile Include="src\core\SoundManager.cpp" />
+    <ClCompile Include="src\core\Window.cpp" />
+    <ClCompile Include="src\graphics\AnimationClip.cpp" />
+    <ClCompile Include="src\graphics\AnimationController.cpp" />
+    <ClCompile Include="src\graphics\Camera.cpp" />
+    <ClCompile Include="src\graphics\Renderer.cpp" />
+    <ClCompile Include="src\graphics\Texture.cpp" />
+    <ClCompile Include="src\maths\Vec2.cpp" />
+    <ClCompile Include="src\maths\Vec3.cpp" />
+    <ClCompile Include="src\maths\Vec4.cpp" />
+    <ClCompile Include="src\pch.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="src\physics\PhysicsManager.cpp" />
+    <ClCompile Include="src\scene\GameObject.cpp" />
+    <ClCompile Include="src\scene\Scene.cpp" />
+    <ClCompile Include="src\utils\Timer.cpp" />
+    <ClCompile Include="game\TestScene.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dependencies\Box2D\include" />
+    <None Include="dependencies\SDL2-2.0.18\include" />
+    <None Include="dependencies\SDL2_image-2.0.5\include" />
+    <None Include="dependencies\SDL2_mixer-2.0.4\include" />
+    <None Include="dependencies\SDL2_ttf-2.0.18\include" />
+    <None Include="dependencies\SDL_FontCache-master" />
+    <None Include="dependencies\entt\include" />
+    <None Include="dependencies\imgui" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="dependencies\Box2D\Box2D.vcxproj">
+      <Project>{A434E80C-1049-10BE-D9CA-B31D459E0CEF}</Project>
+    </ProjectReference>
+    <ProjectReference Include="dependencies\imgui\ImGui.vcxproj">
+      <Project>{C0FF640D-2C14-8DBE-F595-301E616989EF}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

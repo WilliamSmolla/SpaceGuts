@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\William\Desktop\Games\CrappyPlane\Dependancies\SDL_FontCache-master\SDL_FontCache.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\William\Desktop\Games\CrappyPlane\Dependancies\SDL_FontCache-master\SDL_FontCache.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\William\Desktop\Games\CrappyPlane\Dependancies\SDL_FontCache-master\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{72FCB43C-9323-37D9-87EC-3A52ED991508}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{FCA9CBC3-BEB5-3C83-A091-AF926A0AE05A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

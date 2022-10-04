@@ -1,0 +1,4 @@
+C:/Users/William/Desktop/Games/CrappyPlane/Dependancies/SDL_FontCache-master/build/CMakeFiles/FontCache.dir
+C:/Users/William/Desktop/Games/CrappyPlane/Dependancies/SDL_FontCache-master/build/CMakeFiles/FontCache-tests.dir
+C:/Users/William/Desktop/Games/CrappyPlane/Dependancies/SDL_FontCache-master/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/William/Desktop/Games/CrappyPlane/Dependancies/SDL_FontCache-master/build/CMakeFiles/ZERO_CHECK.dir
