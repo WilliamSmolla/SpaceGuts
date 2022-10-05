@@ -14,7 +14,7 @@ public:
 	virtual void OnDestroy() override;
 	virtual void Update(float deltaTime) override;
 
-	bool isGrounded = false;
+	bool isGrounded = true;
 	bool isReleased = true;
 };
 
